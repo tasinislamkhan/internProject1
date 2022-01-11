@@ -1,4 +1,7 @@
+/*google font start*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/*google font eng*/
+
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -9,6 +12,7 @@
 body {
     background: var(--bg);
 }
+/*common css start*/
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -22,6 +26,9 @@ body {
     transition: .2s linear;
 }
 
+/*common css end*/
+
+/*scrolling code start*/
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -37,6 +44,7 @@ html::-webkit-scrollbar-thumb {
     background: #ffffff;
     border-radius: 5rem;
 }
+/*scrolling code end*/
 
 .btn {
     margin-top: 16px;
@@ -109,7 +117,9 @@ html::-webkit-scrollbar-thumb {
     transform: scaleY(0);
     transform-origin: top;
 }
-
+.header .search-form.active{
+    transform: scaleY(1);
+}
 .header .search-form input {
     height: 100%;
     width: 100%;
@@ -139,7 +149,9 @@ html::-webkit-scrollbar-thumb {
     background: #ffffff;
     padding: 0 1.5rem;
 }
-
+.header .cart-items-container.active{
+    right: 0;
+}
 .header .cart-items-container .cart-item {
     position: relative;
     margin: 2rem 0;
@@ -180,3 +192,94 @@ html::-webkit-scrollbar-thumb {
     width: 100%;
     text-align: center;
 }
+
+
+/*home section css start*/
+
+section{
+    padding: 2rem 7%;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eeeeee;
+}
+/*home section css end*/
+
+
+/*media queries*/
+
+@media (max-width: 1023px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+
+/*responsive start*/
+
+@media (max-width: 1023px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #ffffff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar.active{
+        right: 0;
+
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+
+/*responsive end*/
