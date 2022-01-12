@@ -345,15 +345,16 @@ section {
     border: var(--border);
     color: #ffffff;
     margin: .3rem;
+    border-radius: 6px;
 }
-.products .box-container .box .icon a:hover{
+.product .box-container .box .icon a:hover{
     background: var(--main-color);
 }
 .products .box-container .box .image{
     padding: 2.5rem 0;
 }
 .products .box-container .box .image img{
-    height: 2.5rem;
+    height: 25rem;
 }
 .products .box-container .box .content h3{
     color: #ffffff;
