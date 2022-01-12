@@ -33,8 +33,9 @@ body {
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  overflow-y: hidden;
   scroll-padding-top: 9rem;
-  scroll-behavior: smooth;
+  scroll-behavior:initial;
 }
 
 html::-webkit-scrollbar-track {
@@ -347,7 +348,7 @@ section {
     margin: .3rem;
     border-radius: 6px;
 }
-.product .box-container .box .icon a:hover{
+.products .box-container .box .icon a:hover{
     background: var(--main-color);
 }
 .products .box-container .box .image{

@@ -1,3 +1,14 @@
+//jquery niceScroll plugin start
+
+$("body").niceScroll({
+    cursorcolor:'#efa852',
+    cursorborder:"1px solid Black",
+    cursorwidth:"7px",
+  });
+
+//jquery niceScroll plugin end
+
+
 let navbar = document.querySelector(".navbar");
 
 document.querySelector("#menu-btn").onclick = () => {
