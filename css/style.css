@@ -35,7 +35,7 @@ html {
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-padding-top: 9rem;
-  scroll-behavior:initial;
+  scroll-behavior:smooth;
 }
 
 html::-webkit-scrollbar-track {
@@ -337,6 +337,7 @@ section {
     text-align: center;
     border: var(--border);
     padding: 2rem;
+    border-radius: 10px;
 }
 .products .box-container .box .icon a{
     height: 5rem;
