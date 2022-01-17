@@ -35,7 +35,7 @@ html {
   overflow-x: hidden;
   overflow-y: hidden;
   scroll-padding-top: 9rem;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar-track {
@@ -241,7 +241,7 @@ section {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  padding-bottom: 4.5rem;
+  padding-bottom: 3.5rem;
   font-size: 4rem;
 }
 
@@ -379,6 +379,99 @@ section {
     font-weight: lighter;
 }
 /* products section css end*/
+
+/*review section css start*/
+
+.review .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .box-container .box{
+  border: var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+.review .box-container .box p{
+  font-size: 1.5rem;
+  color: #cccccc;
+  line-height: 1.8;
+  padding: 2rem 1rem;
+}
+.review .box-container .box .user{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.review .box-container .box h3{
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.review .box-container .box .stars i{
+  font-size:  1.5rem;
+  color: var(--main-color);
+}
+
+/*review section css end*/
+
+
+/*contact section css start*/
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map{
+  width: 600px;
+  height: 500px;
+}
+
+.contact .row form{
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+
+.contact .row form .inputBox span{
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-transform: none;
+  background: none;
+}
+
+/*contact section css end*/
 
 
 
